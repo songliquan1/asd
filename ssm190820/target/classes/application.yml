@@ -1,0 +1,43 @@
+server:
+  ## 设置服务器访问路径（单体项目名称）
+  servlet:
+    context-path: /ssm190820
+  ## 设置服务器启动端口
+  port: 8081
+  
+
+mybatis:
+  ## mapperXML 扫描
+  mapper-locations: classpath:mprs/*.xml
+    
+spring: 
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 50MB  #单个文件的最大上限
+      max-request-size: 500MB #单个请求的文件总大小上限
+
+  ## 应用 静态资源(如 图片、媒体、css、js等)存放路径
+  resources:
+    static-locations: classpath:public,classpath:static,file:D:\sysresources190820
+    
+  ## 数据源（连接池）配置
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/li
+    username: root
+    password: 123
+    #指定（明确） 非默认配置的第三方数据源类型
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      # 下面为连接池的补充设置，应用到上面所有数据源中
+      # 初始化大小，最小，最大
+      initial-size: 15
+      min-idle: 15
+      max-active: 50
+      # 配置获取连接等待超时的时间
+      max-wait: 60000
+      # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      time-between-eviction-runs-millis: 60000
+      # 配置一个连接在池中最小生存的时间，单位是毫秒
+      min-evictable-idle-time-millis: 300000
