@@ -1,0 +1,19 @@
+create table `stu` (
+	`sid` double ,
+	`name` varchar (30),
+	`age` double ,
+	`gender` varchar (3),
+	`birth` date 
+); 
+insert into `stu` (`sid`, `name`, `age`, `gender`, `birth`) values('1','撒旦','1','男','1852-01-01');
+insert into `stu` (`sid`, `name`, `age`, `gender`, `birth`) values('2','李四','19','男','1993-01-02');
+insert into `stu` (`sid`, `name`, `age`, `gender`, `birth`) values('5','小红','16','女','1993-01-01');
+insert into `stu` (`sid`, `name`, `age`, `gender`, `birth`) values('6','bob','15','男','1993-01-04');
+insert into `stu` (`sid`, `name`, `age`, `gender`, `birth`) values('7','张四','14','女','1993-01-07');
+insert into `stu` (`sid`, `name`, `age`, `gender`, `birth`) values('8','张5','13','男','1993-01-05');
+insert into `stu` (`sid`, `name`, `age`, `gender`, `birth`) values('9','张6','12','男','1993-01-09');
+insert into `stu` (`sid`, `name`, `age`, `gender`, `birth`) values('10','张7','11','女','1993-01-06');
+insert into `stu` (`sid`, `name`, `age`, `gender`, `birth`) values('11','张8','20','男','1993-01-08');
+insert into `stu` (`sid`, `name`, `age`, `gender`, `birth`) values('12','张9','21','男','1993-01-07');
+insert into `stu` (`sid`, `name`, `age`, `gender`, `birth`) values('13','jod','2','男','1995-01-01');
+insert into `stu` (`sid`, `name`, `age`, `gender`, `birth`) values('14','萨达','20','男','1996-01-01');
